@@ -1,0 +1,350 @@
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+button{
+    /* Removes default button format */
+    background: none;
+    border: none;
+
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+.home-btn{
+    color: rgb(0, 0, 0);
+}
+
+.home-btn img{
+    display: block; /* to remove extra space below image */
+    width: 100px;
+    padding-bottom: 0.2em;
+}
+
+.topics{
+    /* Code referenced from https://medium.com/@attarfarnoosh/an-animated-moving-text-effect-with-toy-story-characters-a8692e887042 */
+    position: relative;
+    rotate: 90%;
+    animation: move-words 10s linear infinite;
+    margin: 0;
+
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+
+    font-size: large;
+}
+
+/* Makes intro text move */
+/* Code referenced from https://medium.com/@attarfarnoosh/an-animated-moving-text-effect-with-toy-story-characters-a8692e887042 */
+@keyframes move-words {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+
+header{
+    margin-left: 10em;
+    margin-right: 5em;
+}
+
+  .intro{
+    color: rgb(0, 0, 0);
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    font-style: normal;
+    text-align: left;  
+    
+    padding-bottom: 1em;
+}
+
+.week_num{
+    text-align: center;
+    color:rgb(0, 0, 0);
+    
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    text-align: left;
+    font-size: larger;
+}
+
+h1{
+    font-family: "Lexend", sans-serif;
+}
+
+/* Tags related to the slide menu tabs */
+#slide-tab{
+    flex-wrap: nowrap;
+
+    /* Display qualities of the fish to enable reveal of content */
+    position: relative;
+    display: inline-block;
+  }
+
+.slide-animation{
+    position: absolute;
+    width:100%;
+    display: inline-block;
+}
+
+  @-webkit-keyframes run{
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 500%;    
+    }
+}
+
+/* Reveals content behind fish */
+  .hg-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(249, 249, 249);
+    min-width: 100%;
+    box-shadow: none;
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  #slide-tab:hover .hg-content {
+    display: contents;
+  }
+
+.hg{
+    color:rgb(0, 0, 0);
+    
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+
+    text-align: left;
+    font-size: large;
+
+    margin-top: -12.8em;
+    float: right;
+    margin-right: -6.2em;
+}
+
+.hook1{
+    margin-top: 7em;
+    float: right;
+    margin-right: 20em;
+}
+
+.fish1{
+    margin-top: -10em;
+    margin-left:-90em;
+}
+
+.hg-container{
+    display: inline-flex;
+}
+
+.hg-text{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    text-align: left;
+    font-size: large;
+
+    margin-top: .5em;
+    margin-left: 1em;
+
+}
+
+.source{
+    color: white;
+    background-color:rgb(0, 0, 0);
+
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    font-style: xx-small;
+
+    text-decoration:dotted;
+    padding: .9em;
+    margin-right: 10em;
+    margin-top: 2em;
+    vertical-align: middle;
+}
+
+.hg-img{
+    width: 30em;
+    margin-top: 2em;
+    margin-left: 7em;
+    z-index: 2;
+}
+
+.transfinite-img{
+  width: 63em;
+  margin-top: 2em;
+  margin-left: 7em;
+  z-index: -2;
+}
+
+.seminar{
+    color:rgb(0, 0, 0);
+    
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+
+    text-align: left;
+    font-size: large;
+
+    margin-top: -14.5em;
+    float: right;
+    margin-right: -4.7em;
+}
+
+.seminar-img{
+  margin-right: 5em;
+  width: 30em;
+  margin-top: 2em;
+  margin-left: 7em;
+  z-index: 2;
+}
+
+.hook2{
+    margin-top: 4em;
+    float: right;
+    margin-right: 20em;
+}
+
+.fish2{
+    margin-top: -8em;
+    margin-left:-43em;
+}
+
+
+.workshop{
+    color:rgb(0, 0, 0);
+    
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+
+    text-align: left;
+    font-size: medium;
+
+    margin-top: -16em;
+    float: right;
+    margin-right:-6em;
+}
+
+
+.workshop-container{
+  display: inline-flex;
+  margin-left: 5em;
+}
+
+.workshop-text{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+  text-align: left;
+  font-size: large;
+
+  margin-top: .5em;
+  margin-left: 1em;
+
+}
+
+.workshop-img{
+  margin-right: 5em;
+  width: 30em;
+  margin-top: 2em;
+  margin-left: 7em;
+  z-index: 2;
+}
+
+.hook3{
+    margin-top: -2em;
+    float: right;
+    margin-right: 20em;
+}
+
+.fish3{
+    margin-top: -7em;
+    margin-left:-43em;
+}
+
+.circuit-video{
+    width: 30em;
+    margin-top: 2em;
+    margin-left: 7em;
+    z-index: 2;
+}
+
+.arduino-container{
+  display: inline-flex;
+  margin-top: 4em;
+}
+
+.arduino-img{
+  width: 30em;
+  margin-top: 2em;
+  margin-left: 7em;
+  z-index: -2;
+}
+
+.arduino-text{
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+  text-align: left;
+  font-size: large;
+
+  margin-top: .5em;
+  margin-left: 6em;
+}
+
+li{
+  margin-left: 1em;
+}
+
+
+.next-btn{
+  color:rgb(0, 0, 0);
+  padding: 2em;
+  margin-left: 89em;
+}
+
+.next-btn img{
+  display: block; /* to remove extra space below image */
+  width: 100px;
+  padding:2em;
+  margin-bottom: 0.5em;
+}
+
+.footer {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 10px;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Interactive Media Week 8</title>
+
+<!--Links styles.css doc to index.html-->
+<link rel="stylesheet" type="text/css" href="w8.css"/>
+
+<script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+
+<!--Lexend Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Micro+5+Charted&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Home button-->
+    <a href="index.html">
+        <button class="home-btn">
+            <img src="My_Workbook/workbook/img/home-btn.png">
+            BACK TO HOME
+        </button>
+    </a>
+
+    <header>
+    <h1>Interactive Media</h1>
+    <h2 class="week_num">Week 8: WOT IS PHYSICAL COMPUTING II?</h2>
+    <p class="intro">
+        This week we looked further into Speculative design.
+    </p>
+    </header>
+
+    <div class="menu">
+        <div class="hg-container">
+            <h2 class="hg-title">HUNT N' GATHER</h2>
+
+            <div class="slideshow-container">
+                <!--SPAMBOTS-->
+                <div class="image-gallery">
+                    <div class="image-container">
+                        <img class="hg-image" src="My_Workbook/workbook/img/Spambots1.jpg" alt="Image of spam robots typing">
+                        <!--Image source: https://melbourne.sciencegallery.com/not-natural-exhibits/spambots-->   
+                    </div>
+                     
+                    <div class="image-container">
+                        <img class="hg-image" src="My_Workbook/workbook/img/Spambots2.jpg" alt="Image of spam robots typing">
+                        <!--Image source: https://melbourne.sciencegallery.com/not-natural-exhibits/spambots-->   
+                    </div>
+                </div>
+                <a class="prev-img" onclick="slides(-1)">❮</a>
+                <a class="next-img" onclick="slides(1)">❯</a>
+            </div>
+            <!--End of slideshow container-->
+
+                 <script>
+                    var index = 1;
+                    displaySlides(index);
+                 
+                    function slides(n) {
+                       displaySlides(index += n);
+                    }
+                 
+                    function activeSlides(n) {
+                       displaySlides(index = n);
+                    }
+                 
+                    function displaySlides(n) {
+                       var i;
+                       var allSlides = document.getElementsByClassName("image-container");
+                 
+                       if (n > allSlides.length) {
+                          index = 1;
+                       }
+                       if (n < 1) {
+                          index = allSlides.length;
+                       }
+                       for (i = 0; i < allSlides.length; i++) {
+                          allSlides[i].style.display = "none";
+                       }
+                       allSlides[index - 1].style.display = "block";
+                    }
+                 </script>
+
+                <div class="hg-text">
+                    <h2 class="content-title">SPAMBOTS</h2>
+                    <p>Neil Mendoza</p>
+                    <p>
+                        Animatronic Spam collectively type out an AI-generated script based 
+                        on Aldous Huxley’s novel, Brave New World which invite the audience 
+                        to read the text on screen.
+                    </p>
+                </div>
+
+                <!--REVEALUXION-->
+                <img class="hg-image" src="My_Workbook/workbook/img/Revealuxion.jpg" alt="Image of cocoon-like performance piece">
+                <!--Image source: https://www.contemporaryartstation.com/talks-vol-3/2021/9/20/kieun-kim-->
+                <div class="hg-text">
+                    <h2 class="content-title">REVEALUXION</h2>
+                    <p>Ki-Eun Kim</p>
+                    <p>
+                        Inspired by the form and function of cocoons and marionettes, Revealuxion is an 
+                        experimental performance garment in which the artist’s fingers control the opening 
+                        to the chrysalis they are positioned within.
+                    </p>
+                </div>
+
+                <!--MATERIAL EXPRESSIONS NO.2-->
+                    <!--Video-->
+                        <div>
+                            <iframe class="video" title="vimeo-player" src="https://player.vimeo.com/video/189651109?h=0595b69047" frameborder="0" allowfullscreen></iframe>
+                            <!--https://vimeo.com/189651109-->   
+                        </div>
+    
+                <div class="hg-text">
+                    <h2 class="content-title">MATERIAL EXPRESSIONS NO.2</h2>
+                    <p>Laura Splan</p>
+                    <p>
+                        Material Expressions No. 2 is as a durational performance piece in which the 
+                        heartbeat of the performer activates the unravelling of the yarn holder motor, 
+                        tracked through the use of Electromyography (EMG) electrodes attached to the 
+                        chest of the performer.
+                    </p>
+                </div>
+        </div>
+    
+        <div class="s-container">
+            <h2 class="s-title">WOT IS PHYSICAL COMPUTING?</h2>
+            <div class="circles">
+                <div id="circle1"></div>
+                <div id="circle1"></div>
+                <div id="circle1"></div>
+            </div>
+        </div>
+    
+        <div class="w1-container">
+            <h2 class="w1-title">SPECULATIVE OBJECTS</h2>
+
+            <div class="slideshow-container">
+                <!--Image-->
+                <div class="image-gallery">
+
+                <!--FISH PLAYGROUND MODEL Image-->
+                    <div class="image-container">
+                    
+                        <img class="hg-image" src="My_Workbook/workbook/img/Fish_Playground.png" alt="Model of Fish Playground">
+                        <!--Image source: https://melbourne.sciencegallery.com/not-natural-exhibits/spambots-->
+                    </div>
+
+                    <div class="image-container">
+                        <!--FISH PLAYGROUND 1 Image-->
+                        <img class="hg-image" src="My_Workbook/workbook/img/Fish_Playground1.png" alt="Fish Playground Build">
+                    </div>
+
+                <!--FISH PLAYGROUND 2 Video-->
+                    <div class="image-container">
+                        <video width="320" height="240">
+                            <source src="My_Workbook/workbook/video/Fish_Playground2.mp4" alt="Video of circuit build of Fish Playground Build">
+                        </video>
+                    </div>
+                </div>
+                <a class="prev-img" onclick="slides(-1)">❮</a>
+            </div>
+            <!--End of slideshow container-->
+
+                <div class="hg-text">
+                    <h2 class="content-title">FISH PLAYGROUND</h2>
+                    <p>Circuit 3</p>
+                    <a href="https://www.tinkercad.com/things/bnSwna3mWXB-copy-of-fish-playground" class="source">
+                        Tinkercad
+                    </a>
+                </div>
+
+                <!--LED MATRIX-->
+                <div class="slideshow-container">
+                    <!--Image-->
+                    <div class="image-gallery">
+                    <!--LED MATRIX MODEL Image-->
+                        <div class="image-container">
+                            <img class="hg-image" src="My_Workbook/workbook/img/LED-Matrix-Model.png" alt="Model of LED Matrix Build">
+                            <!--Image source: Freenove User Guide - Interactive Media Canvas-->
+                        </div>
+
+                    <!--LED MATRIX BUILD Image-->
+                        <div class="image-container">
+                            <img class="hg-image" src="My_Workbook/workbook/img/LED_Matrix.png" alt="Our build of the LED Matrix Build">
+                        </div>
+                    </div>
+                    <div class="hg-text">
+                        <h2 class="content-title">LED MATRIX</h2>
+                        <p>Circuit 4</p>
+                    </div>
+                    <a class="prev-img" onclick="slides(-1)">❮</a>
+                </div>
+                <!--End of slideshow container-->
+            </div>
+
+    
+        <div class="w2-container">
+            <h2 class="w2-title">CONSULTATION</h2>
+            <div class="circles">
+                <div id="circle1"></div>
+                <div id="circle1"></div>
+                <div id="circle1"></div>
+            </div>
+        </div>
+    </div>
+
+<!--Footer of website-->
+<footer>
+    
+    <!--Week 5 Button-->
+    <a href="w9.html">
+        <button class="next-btn">
+            <img src="My_Workbook/workbook/img/9-btn.gif">
+            CLICK HERE FOR WEEK 8
+        </button>
+    </a>
+
+</footer>
+</body>
+
+</html>
+
+

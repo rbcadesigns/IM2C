@@ -1,0 +1,278 @@
+body{
+    background-color: #07526A;
+    scroll-behavior: horizontal;
+}
+
+button{
+    /* Removes default button format */
+    background: none;
+    border: none;
+
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+.home-btn{
+    color: rgb(255, 255, 255);
+}
+
+.home-btn img{
+    display: block; /* to remove extra space below image */
+    width: 100px;
+    padding-bottom: 0.2em;
+}
+
+/* Interactive Media Title */
+header{
+    margin-left: 10em;
+    margin-right: 5em;
+    font-family: "Lexend", sans-serif;
+    color: white;
+}
+
+/* Week 8: WOT IS PHYSICAL COMPUTING? */
+.week_num{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    text-align: left;
+    font-size: larger;
+}
+
+/* This week we... */
+.intro{
+    color: rgb(255, 255, 255);
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    font-style: normal;
+    text-align: left;  
+    
+    padding-bottom: 1em;
+}
+
+.source{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: small;
+    background-color: #4999C6;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.menu{
+    display: inline-flex;
+
+    background-color: #07526A;
+    margin-left: -1.5em;
+    margin-right: 5em;
+    margin-bottom: -15em;
+
+    height: 150em;
+}
+
+.content-title{
+    color: rgb(255, 255, 255);
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    font-size: xx-large;
+}
+
+/* Container for Hunt N' Gather in Menu*/
+.hg-container{
+    background-color: #4999C6;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-left: 5em;
+    width: 50em;
+}
+
+.hg-content{
+    display: inline-flexbox;
+}
+
+/* Image gallery for multiple images */
+/* Code adapted and modified from https://www.tutorialspoint.com/css/css_image_gallery.htm */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+ }
+ .image-gallery {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+ }
+ .image-container {
+    width: 100%;
+    height: 100%;
+    margin-left: 5em;
+ }
+
+ .video{
+    width: 30em;
+    margin-top: 2em;
+    margin-left: 7em;
+    z-index: 2;
+}
+
+ .prev-img, .next-img {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    border-radius: 2em;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+ }
+ .next-img {
+    right: 0;
+ }
+ .prev-img:hover, .next-img:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+ }
+ /* End of adapted code */
+
+.hg-image{
+    width: 40em;
+    margin-top: 6em;
+    border-radius: .5em;
+    margin-left: 1em;
+}
+
+.hg-text{
+    color:white;
+    
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    text-align: left;
+    font-size: large;
+
+    margin-top: .5em;
+    margin-left: 1em;
+    margin-bottom: 3em;
+}
+
+/* Container for Seminar in Menu */
+.s-container{
+    background-color: #49AECD;
+    width: 12em;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    z-index: 0;
+    position: relative;
+}
+
+.circles{
+    margin-top: 10em;
+}
+
+#circle1 {
+    background: rgb(224, 224, 224);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-top: 3em;
+    margin-left: 4em;
+
+    display: block; /* to remove extra space below image */
+    padding: 10px;
+    animation: pulse 10s infinite;
+}
+
+/* Container for Workshop Activity 1 in Menu */
+.w1-container{
+    background-color: #3E879E;
+    width: 50em;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    z-index: 2;
+}
+
+/* Container for Workshop Activity 2 in Menu */
+.w2-container{
+    background-color: #0F3E4C;
+    width: 12em;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    z-index: 1;
+}
+
+.hg-title{
+    font-family: "Lexend", sans-serif;
+    color:white;
+    font-size: xx-large;
+
+    text-align: right;
+    margin-top: 2em;
+    margin-right: 2em;
+}
+
+.s-title{
+    font-family: "Lexend", sans-serif;
+    transform: rotate(-90deg);
+    color:white;
+    font-size: xx-large;
+
+    vertical-align: top;
+    margin-top: 4em;
+    margin-left: .5em;
+}
+
+.w1-title{
+    font-family: "Lexend", sans-serif;
+    color:white;
+    font-size: xx-large;
+
+    text-align: right;
+    margin-top: 2em;
+    margin-right: 2em;
+}
+
+.w2-title{
+    font-family: "Lexend", sans-serif;
+    transform: rotate(-90deg);
+    vertical-align: top;
+    color:white;
+    font-size: xx-large;
+
+    text-align: right;
+    margin-top: 7em;
+    margin-left: .7em;
+}
+
+.next-btn{
+    color:rgb(0, 0, 0);
+    padding: 2em;
+    margin-left: 5em;
+  }
+  
+  .next-btn img{
+    display: block; /* to remove extra space below image */
+    width: 100px;
+    padding:2em;
+    margin-bottom: 0.5em;
+  }
+
+.footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+  }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Interactive Media Week 9</title>
+
+<!--Links styles.css doc to index.html-->
+<link rel="stylesheet" type="text/css" href="w9.css"/>
+
+<script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+<script language="javascript" type="text/javascript" src="My_Workbook/workbook/text/randomness.js"></script>
+
+<!--Lexend Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Micro+5+Charted&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Home button-->
+    <a href="index.html">
+        <button class="home-btn">
+            <img src="My_Workbook/workbook/img/home-btn.png">
+            BACK TO HOME
+        </button>
+    </a>
+
+    <!-- Magenta Circle -->
+    <div id="circle1"></div>
+
+    <header>
+    <h1>Interactive Media</h1>
+    <h2 class="week_num">Week 9: WOT IS PHYSICAL COMPUTING III?</h2>
+    <p class="intro">
+        This week we continued developing our skills in physical computing with our Arduino boards
+        and caught up on things we missed because of the public holiday.
+    </p>
+    </header>
+
+    <!-- HUNT N' GATHER -->
+    <!-- White Blob - WIP -->
+    <div id="circle2">
+        <h2 class="subheading1">
+            HUNT N' GATHER
+        </h2>
+    </div>
+
+    <button onclick="toggleHidden()">POP UP</button>
+    <div class="hidden" id="popUp">
+    This div's visibility is controlled by the pop up button, using JS to
+    toggle the 'hidden' class. The hidden class gives any element a style of
+    "display: hidden;". When it is removed, the default display of "block" is
+    applied.
+    </div>
+
+    <script>
+        function toggleHidden() {
+        var element = document.getElementById("popUp");
+        if (!element.classList.contains("hidden")) {
+        element.classList.add("hidden");
+        } else {
+        element.classList.toggle("hidden");
+        }
+        }
+    </script>
+
+    
+    <!-- SEMINAR -->
+    <div>
+        <div id="circle3">
+            <h2 class="subheading2">
+                SEMINAR
+            </h2>
+        </div>
+        <div class="response2">
+            NON-HUMAN DRAWING MACHINES
+        </div>
+    </div>
+
+    <!-- SPECULATIVE OBJECTS -->
+    <div>
+        <div id="circle4">
+            <h2 class="subheading3">
+                SPECULATIVE OBJECTS
+            </h2>
+        </div>
+        <div class="objects">
+            <img class="touch-img" src="My_Workbook/workbook/img/Touch1.png">
+            <img class="touch-img" src="My_Workbook/workbook/img/Touch2.png">
+            <img class="touch-img" src="My_Workbook/workbook/img/Touch3.png">
+        </div>
+    </div>
+    <h3 class="topic">TOUCH</h3>
+    <p class="topic-sub">Circuit 5</p>
+
+
+    <!-- FIRMATA LIVE DEMO~ WAIT WOT? -->
+    <div id="blob">
+        <svg viewbox="9 0 250 380">
+        <circle cx="90" cy="100" r="80" />
+        </svg>
+        <h2 class="subheading4">
+            FIRMATA LIVE DEMO~ WAIT WOT?
+        </h2>
+        <svg>
+            <circle cx="200" cy="100" r="80" />
+        </svg>
+    </div>
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>

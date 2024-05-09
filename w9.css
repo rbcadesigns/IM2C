@@ -1,0 +1,270 @@
+body{
+    background-color: #000000;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+button{
+    /* Removes default button format */
+    background: none;
+    border: none;
+
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+.home-btn{
+    color: rgb(255, 255, 255);
+}
+
+.home-btn img{
+    display: block; /* to remove extra space below image */
+    width: 100px;
+    padding-bottom: 0.2em;
+}
+
+/* Interactive Media Title */
+header{
+    margin-left: 10em;
+    margin-right: 5em;
+    font-family: "Lexend", sans-serif;
+    color: white;
+}
+
+/* Week 9: WOT IS PHYSICAL COMPUTING? */
+.week_num{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    text-align: left;
+    font-size: larger;
+}
+
+/* This week we... */
+.intro{
+    color: rgb(255, 255, 255);
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    font-style: normal;
+    text-align: left;  
+    
+    padding-bottom: 1em;
+}
+
+#circle1 {
+    background: rgb(255, 0, 234);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-left: 75em;
+    margin-top: -11em;
+
+    display: block; /* to remove extra space below image */
+    padding: 10px;
+    animation: pulse 10s infinite;
+}
+
+#circle2 {
+    background: white;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: 7em;
+    margin-left: 10em;
+
+    display: block; /* to remove extra space below image */
+    padding: 17px;
+    animation: pulse 5s infinite;
+}
+
+
+#circle3 {
+    background-color: red;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    margin-left: 60em;
+
+    text-align: left;
+    vertical-align: middle;
+    line-height: 600px; 
+
+    padding: 2px;
+    animation: pulse 7s infinite;
+}
+
+#circle4 {
+    background-color: rgb(255, 174, 0);
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 600px; 
+
+    padding: 2px;
+    animation: pulse 20s infinite;
+}
+
+#blob {
+    margin-top: 10em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px; 
+}
+
+/* Code modified/adapted from:
+    https://stackoverflow.com/questions/33888529/is-it-possible-to-create-this-shape-two-partial-circles-joined-together-with-c */
+svg {
+    width: 1000px;
+    height: 200px;
+    position: absolute;
+
+    padding: 9px;
+    animation: pulse 2s infinite;
+    }
+    
+    svg circle {
+    fill: rgb(0,26,255);
+    }
+
+.section{
+    background-color: white;
+}
+
+.response2{
+    color: aliceblue;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    font-size: x-large;
+    font-style: normal;
+    margin-top: -5em;
+    margin-bottom: 15em;
+    margin-left: 10em;
+}
+
+/* HUNT N GATHER */
+.subheading1{
+    color: rgb(0, 0, 0);
+
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    font-style: normal;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 400px; 
+}
+
+/* SEMINAR */
+.subheading2{
+    color: rgb(229, 255, 0);
+
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    font-style: normal;
+
+    margin-left: 2em;
+
+    text-align: left;
+}
+
+/* SPECULATIVE OBJECTS */
+.subheading3{
+    color: rgb(73, 255, 233);
+
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    font-style: normal;
+    margin-left: 5em;
+
+    text-align: left;
+}
+
+/* FIRMATA LIVE DEMO WAIT WOT? */
+.subheading4{
+    color: rgb(255, 120, 120);
+
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    font-style: normal;
+    margin-left: 30em;
+
+    text-align: left;
+    vertical-align: middle;
+    line-height: 600px; 
+}
+
+/* Code modified from Interactive Media Semester 1, 2024 - Week 3 */
+#popUp {
+    width: 30vw;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+    top: 30%;
+    left: 35vw;
+    border: 1px solid black;
+    }
+
+.hidden {
+    display: none;
+    }
+    
+    
+    /* Pulse Animation
+        Source: https://www.geeksforgeeks.org/css-pulse-animation/
+    */
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+.topic{
+    color: white;
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    font-style: normal;
+    margin-left: 25em;
+}
+
+.topic-sub{
+    color: white;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    margin-left: 45em;
+}
+
+.objects{
+    display: inline-block;
+    margin-left: 16em;
+}
+
+.touch-img{
+    width: 20em;
+}
