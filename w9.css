@@ -84,10 +84,8 @@ header{
     margin-left: 10em;
 
     display: block; /* to remove extra space below image */
-    padding: 17px;
     animation: pulse 5s infinite;
 }
-
 
 #circle3 {
     background-color: red;
@@ -95,6 +93,7 @@ header{
     width: 600px;
     height: 600px;
     margin-left: 60em;
+    margin-top: 65em;
 
     text-align: left;
     vertical-align: middle;
@@ -104,14 +103,19 @@ header{
     animation: pulse 7s infinite;
 }
 
+.w1-container {
+    margin-left: 60em;
+
+}
+
 #circle4 {
     background-color: rgb(255, 174, 0);
     border-radius: 50%;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     text-align: center;
     vertical-align: middle;
-    line-height: 600px; 
+    line-height: 500px; 
 
     padding: 2px;
     animation: pulse 20s infinite;
@@ -190,9 +194,9 @@ svg {
     font-weight: 700;
     font-size: xx-large;
     font-style: normal;
-    margin-left: 5em;
+    margin-right: 1.5em;
 
-    text-align: left;
+    text-align: right;
 }
 
 /* FIRMATA LIVE DEMO WAIT WOT? */
@@ -260,6 +264,7 @@ svg {
     margin-left: 45em;
 }
 
+
 .objects{
     display: inline-block;
     margin-left: 16em;
@@ -268,7 +273,6 @@ svg {
 .touch-img{
     width: 20em;
 }
-
 
 /* H&G content */
 .hg-content {
@@ -304,7 +308,7 @@ svg {
     text-align: left;
     font-size: large;
     margin-left: 2em;
-    margin-right: 30em;
+    margin-right: 15em;
 }
 
 .source{
@@ -323,4 +327,40 @@ svg {
     width: 30em;
     margin-top: 2em;
     margin-left: 7em;
+}
+
+.image-description {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    text-align: left;
+    font-size: large;
+    margin-left: 2em;
+    margin-right: 30em;
+}
+
+.touch-text{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    text-align: left;
+    font-size: large;
+    margin-left: 2em;
+    margin-right: 15em;
+    display: inline-flexbox;
+}
+
+.touch-desc {
+    color: white;
+    
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    
+    margin-left: 45em;
 }
