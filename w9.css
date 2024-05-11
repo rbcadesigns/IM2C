@@ -268,3 +268,70 @@ svg {
 .touch-img{
     width: 20em;
 }
+
+/* H&G content */
+  .hg-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(249, 249, 249);
+    min-width: 100%;
+    box-shadow: none;
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+.hg{
+    color:rgb(0, 0, 0);
+    
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+
+    text-align: left;
+    font-size: large;
+
+    margin-top: -12.8em;
+    float: right;
+    margin-right: -6.2em;
+}
+
+.hg-container{
+    display: inline-flex;
+}
+
+.hg-text{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    text-align: left;
+    font-size: large;
+
+    margin-top: .5em;
+    margin-left: 1em;
+
+}
+
+.source{
+    color: white;
+    background-color:rgb(0, 0, 0);
+
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    font-style: xx-small;
+
+    text-decoration:dotted;
+    padding: .9em;
+    margin-right: 10em;
+    margin-top: 2em;
+    vertical-align: middle;
+}
+
+.hg-img{
+    width: 30em;
+    margin-top: 2em;
+    margin-left: 7em;
+    z-index: 2;
+}
