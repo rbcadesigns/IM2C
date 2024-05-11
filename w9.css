@@ -269,15 +269,14 @@ svg {
     width: 20em;
 }
 
+
 /* H&G content */
-  .hg-content {
-    display: none;
+.hg-content {
+    display:inline-flexbox;
     position: absolute;
-    background-color: rgb(249, 249, 249);
+    color: rgb(249, 249, 249);
     min-width: 100%;
-    box-shadow: none;
     padding: 12px 16px;
-    z-index: 1;
   }
 
 .hg{
@@ -290,10 +289,6 @@ svg {
 
     text-align: left;
     font-size: large;
-
-    margin-top: -12.8em;
-    float: right;
-    margin-right: -6.2em;
 }
 
 .hg-container{
@@ -308,10 +303,8 @@ svg {
 
     text-align: left;
     font-size: large;
-
-    margin-top: .5em;
-    margin-left: 1em;
-
+    margin-left: 2em;
+    margin-right: 30em;
 }
 
 .source{
@@ -324,14 +317,10 @@ svg {
 
     text-decoration:dotted;
     padding: .9em;
-    margin-right: 10em;
-    margin-top: 2em;
-    vertical-align: middle;
 }
 
 .hg-img{
     width: 30em;
     margin-top: 2em;
     margin-left: 7em;
-    z-index: 2;
 }
